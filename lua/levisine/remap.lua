@@ -33,3 +33,18 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+
+--Other remaps
+vim.keymap.set("n", "<leader>h", "<C-w>s")
+vim.keymap.set("n", "<leader>v", "<C-w>v")
+vim.keymap.set("n", "<leader=>", "<C-w> =")
+vim.keymap.set("n", "<leader>x", ":close<CR>")
+
+vim.keymap.set("n", "<leader>to" , ":tabnew<CR>")
+vim.keymap.set("n", "<leader>tc" , ":tabclose<CR>")
+vim.keymap.set("n", "<leader>tn" , ":tabn<CR>")
+vim.keymap.set("n", "<leader>tp" , ":tabp<CR>")
+
+
+
