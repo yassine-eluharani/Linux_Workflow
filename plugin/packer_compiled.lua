@@ -164,6 +164,11 @@ _G.packer_plugins = {
     path = "/home/yassine/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  undotree = {
+    loaded = true,
+    path = "/home/yassine/.local/share/nvim/site/pack/packer/start/undotree",
+    url = "https://github.com/mbbill/undotree"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/yassine/.local/share/nvim/site/pack/packer/start/vim-fugitive",
