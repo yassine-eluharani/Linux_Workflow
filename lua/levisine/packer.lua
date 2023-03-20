@@ -58,6 +58,9 @@ return require('packer').startup(function(use)
     --Git integration
     use("lewis6991/gitsigns.nvim")
 
+
+    use("szw/vim-maximizer")
+
     -- LSP using plugin lsp-zero
     -- use {
     --  'VonHeikemen/lsp-zero.nvim',
