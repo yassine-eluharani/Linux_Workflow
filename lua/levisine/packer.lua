@@ -27,9 +27,9 @@ return require('packer').startup(function(use)
     use("nvim-lualine/lualine.nvim")
 
     -- autocompletion
-    use("hrsh7th/nvim-cmp")
-    use("hrsh7th/cmp-buffer")
-    use("hrsh7th/cmp-path")
+    -- use("hrsh7th/nvim-cmp")
+    -- use("hrsh7th/cmp-buffer")
+    -- use("hrsh7th/cmp-path")
 
     --Snippets
     use("L3MON4D3/LuaSnip")
@@ -37,21 +37,21 @@ return require('packer').startup(function(use)
     use("rafamadriz/friendly-snippets")
 
     --Formatting & Linting
-    use("jose-elias-alvarez/null-ls.nvim")
-    use("jayp0521/mason-null-ls.nvim")
+    -- use("jose-elias-alvarez/null-ls.nvim")
+    -- use("jayp0521/mason-null-ls.nvim")
     -- use("jay-babu/mason-null-ls.nvim")
     -- mason lsp configuration
-    use('williamboman/mason.nvim')
-    use('williamboman/mason-lspconfig.nvim')
-    use('neovim/nvim-lspconfig')
+    -- use('williamboman/mason.nvim')
+    -- use('williamboman/mason-lspconfig.nvim')
+    -- use('neovim/nvim-lspconfig')
     -- Allows us to configure so they appear in autpcomplition
-    use("hrsh7th/cmp-nvim-lsp")
+    -- use("hrsh7th/cmp-nvim-lsp")
     -- enhanced UI to our lsp
-    use({ "glepnir/lspsaga.nvim", branch = "main" })
+    -- use({ "glepnir/lspsaga.nvim", branch = "main" })
     -- added functionalities for tsserver
-    use("jose-elias-alvarez/typescript.nvim")
+    -- use("jose-elias-alvarez/typescript.nvim")
     -- icons for autocomplition
-    use("onsails/lspkind.nvim")
+    -- use("onsails/lspkind.nvim")
     --Auto closing
     use("windwp/nvim-autopairs")
     use("windwp/nvim-ts-autotag")
@@ -63,26 +63,26 @@ return require('packer').startup(function(use)
     use("szw/vim-maximizer")
 
     -- LSP using plugin lsp-zero
-    -- use {
-    --  'VonHeikemen/lsp-zero.nvim',
-    --  branch = 'v1.x',
-    --  requires = {
-    --   -- LSP Support
-    --   {'neovim/nvim-lspconfig'},             -- Required
-    --   {'williamboman/mason.nvim'},           -- Optional
-    --   {'williamboman/mason-lspconfig.nvim'}, -- Optional
-    --
-    --   -- Autocompletion
-    --   {'hrsh7th/nvim-cmp'},         -- Required
-    --   {'hrsh7th/cmp-nvim-lsp'},     -- Required
-    --   {'hrsh7th/cmp-buffer'},       -- Optional
-    --   {'hrsh7th/cmp-path'},         -- Optional
-    --   {'saadparwaiz1/cmp_luasnip'}, -- Optional
-    --   {'hrsh7th/cmp-nvim-lua'},     -- Optional
-    --
-    --   -- Snippets
-    --   {'L3MON4D3/LuaSnip'},             -- Required
-    --   {'rafamadriz/friendly-snippets'}, -- Optional
-    --  }
-    -- }
+    use {
+     'VonHeikemen/lsp-zero.nvim',
+     branch = 'v1.x',
+     requires = {
+      -- LSP Support
+      {'neovim/nvim-lspconfig'},             -- Required
+      {'williamboman/mason.nvim'},           -- Optional
+      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},         -- Required
+      {'hrsh7th/cmp-nvim-lsp'},     -- Required
+      {'hrsh7th/cmp-buffer'},       -- Optional
+      {'hrsh7th/cmp-path'},         -- Optional
+      {'saadparwaiz1/cmp_luasnip'}, -- Optional
+      {'hrsh7th/cmp-nvim-lua'},     -- Optional
+
+      -- Snippets
+      {'L3MON4D3/LuaSnip'},             -- Required
+      {'rafamadriz/friendly-snippets'}, -- Optional
+        }}
+
 end)
