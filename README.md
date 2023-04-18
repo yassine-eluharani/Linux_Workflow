@@ -29,3 +29,13 @@ Enter neovim and source files running `:so` command from nvim
 # Step 4
 Install nvim plugins by running `:PackerSync`
 
+# Tmux installation and config
+## Installation
+[Installation](https://github.com/tmux/tmux/wiki/Installing)
+copt tmux config to home dir `cp tmux.config ~`
+
+### Install tmux plugin manager
+`git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+
+### Open a tmux session and install plugins
+inside a tmux session: `<prefix> I `
