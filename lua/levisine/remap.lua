@@ -1,5 +1,5 @@
-vim.g.mapleader = ','
-vim.keymap.set('n', '<leader>n', vim.cmd.Ex)
+vim.g.mapleader = ","
+vim.keymap.set("n", "<leader>n", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -28,7 +28,7 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
+	vim.cmd("so")
 end)
 
 --Other remaps
@@ -36,7 +36,7 @@ vim.keymap.set("n", "<leader>h", "<C-w>s")
 vim.keymap.set("n", "<leader>v", "<C-w>v")
 vim.keymap.set("n", "<leader=>", "<C-w> =")
 vim.keymap.set("n", "<leader>x", ":close<CR>")
-vim.keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
+vim.keymap.set("n", "<leader>m", ":MaximizerToggle<CR>")
 
 vim.keymap.set("n", "<leader>to", ":tabnew<CR>")
 vim.keymap.set("n", "<leader>tc", ":tabclose<CR>")
