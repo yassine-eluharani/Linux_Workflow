@@ -31,10 +31,12 @@ vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
 end)
 
+-- vim.keymap.set("n", "<leader>z", ":ZenMode<CR>")
+
 --Other remaps
 vim.keymap.set("n", "<leader>h", "<C-w>s")
 vim.keymap.set("n", "<leader>v", "<C-w>v")
-vim.keymap.set("n", "<leader=>", "<C-w> =")
+vim.keymap.set("n", "<leader>=", "<C-w> =")
 vim.keymap.set("n", "<leader>x", ":close<CR>")
 vim.keymap.set("n", "<leader>m", ":MaximizerToggle<CR>")
 
@@ -43,4 +45,4 @@ vim.keymap.set("n", "<leader>tc", ":tabclose<CR>")
 vim.keymap.set("n", "<leader>tn", ":tabn<CR>")
 vim.keymap.set("n", "<leader>tp", ":tabp<CR>")
 
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+-- vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")

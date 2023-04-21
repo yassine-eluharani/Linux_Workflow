@@ -63,6 +63,9 @@ return require("packer").startup(function(use)
 	use("christoomey/vim-tmux-navigator")
 	use("szw/vim-maximizer")
 
+	-- New testing plugins
+	use("folke/zen-mode.nvim")
+
 	-- LSP using plugin lsp-zero
 	-- use {
 	--  'VonHeikemen/lsp-zero.nvim',
