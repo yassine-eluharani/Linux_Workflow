@@ -65,5 +65,5 @@ return require("packer").startup(function(use)
 
 	-- New testing plugins
 	use("folke/zen-mode.nvim")
-	-- use("kdheepak/lazygit.nvim")
+	use("kdheepak/lazygit.nvim")
 end)
