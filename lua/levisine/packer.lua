@@ -49,7 +49,7 @@ return require("packer").startup(function(use)
 	-- Allows us to configure so they appear in autpcomplition
 	use("hrsh7th/cmp-nvim-lsp")
 	-- enhanced UI to our lsp
-	use({ "glepnir/lspsaga.nvim", branch = "main" })
+	-- use({ "glepnir/lspsaga.nvim", branch = "main" })
 	-- added functionalities for tsserver
 	use("jose-elias-alvarez/typescript.nvim")
 	-- icons for autocomplition
