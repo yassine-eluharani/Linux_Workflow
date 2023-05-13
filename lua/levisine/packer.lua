@@ -14,10 +14,12 @@ return require("packer").startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
-	-- use({ 'rose-pine/neovim', as = 'rose-pine' })
-	-- vim.cmd('colorscheme rose-pine')
+	use({ "rose-pine/neovim", as = "rose-pine" })
+	vim.cmd("colorscheme rose-pine")
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	vim.cmd("colorscheme catppuccin")
+	use({ "wittyjudge/gruvbox-material.nvim", as = "gruvbox-material" })
+	vim.cmd("colorscheme gruvbox-material")
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use("ThePrimeagen/harpoon")
 	use("tpope/vim-fugitive")
@@ -62,8 +64,9 @@ return require("packer").startup(function(use)
 
 	use("christoomey/vim-tmux-navigator")
 	use("szw/vim-maximizer")
-
-	-- New testing plugins
 	use("folke/zen-mode.nvim")
 	use("kdheepak/lazygit.nvim")
+
+	-- New testing plugins
+	use("simrat39/symbols-outline.nvim")
 end)

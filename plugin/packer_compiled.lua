@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/levi/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["gruvbox-material"] = {
+    loaded = true,
+    path = "/home/levi/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/wittyjudge/gruvbox-material.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/levi/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -193,6 +198,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/levi/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/home/levi/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
+  },
+  ["symbols-outline.nvim"] = {
+    loaded = true,
+    path = "/home/levi/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
