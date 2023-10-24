@@ -13,12 +13,11 @@ return require("packer").startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
+	--[[ --------------------------- ]]
 	use({ "rose-pine/neovim", as = "rose-pine" })
-	vim.cmd("colorscheme rose-pine")
 	use({ "catppuccin/nvim", as = "catppuccin" })
-	vim.cmd("colorscheme catppuccin")
 	use({ "wittyjudge/gruvbox-material.nvim", as = "gruvbox-material" })
-	vim.cmd("colorscheme gruvbox-material")
+	--[[ --------------------------- ]]
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use("ThePrimeagen/harpoon")
 	use("mbbill/undotree")
@@ -115,4 +114,15 @@ return require("packer").startup(function(use)
 
 	use("xiyaowong/transparent.nvim")
 	use("folke/flash.nvim")
+	use("rcarriga/nvim-notify")
+	use("folke/noice.nvim")
+	use("lukas-reineke/indent-blankline.nvim")
+	use({
+		"nvim-neotest/neotest",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"antoinemadec/FixCursorHold.nvim",
+			"haydenmeade/neotest-jest",
+		},
+	})
 end)
