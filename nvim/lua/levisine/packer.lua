@@ -64,7 +64,6 @@ return require("packer").startup(function(use)
 
 	use("christoomey/vim-tmux-navigator")
 	use("szw/vim-maximizer")
-	use("folke/zen-mode.nvim")
 	use("kdheepak/lazygit.nvim")
 
 	use({
@@ -113,5 +112,7 @@ return require("packer").startup(function(use)
 			enabled = false,
 		}),
 	})
-	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
+
+	use("xiyaowong/transparent.nvim")
+	use("folke/flash.nvim")
 end)

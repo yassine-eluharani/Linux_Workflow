@@ -23,5 +23,3 @@ tsj.setup({
 	---@type table Presets for languages
 	-- langs = {}, -- See the default presets in lua/treesj/langs
 })
-
-vim.keymap.set("n", "<C-z>", ":TSJToggle<CR>")
