@@ -1,12 +1,23 @@
 font:
-  size: 13
+  size: 15
   offset:
-    y: 16
+    y: 5
+    x: 0
   glyph_offset:
-    y: 9
+    y: 0
+    x: 0
   normal:
     family: "SFMono Nerd Font"
+    style: Light
+  bold:
+    family: "SFMono Nerd Font"
+    style: Medium
+  italic:
+    family: "SFMono Nerd Font"
+    style: Light italic
+
 window:
+  dynamic_padding: false
   padding:
     x: 5
     y: 5
@@ -97,7 +108,7 @@ colors: *moonfly
 # *gruvbox-dark
 
 # colors: *gruvbox-dark
-colors: *gruvbox-dark
+colors: *moonfly
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
