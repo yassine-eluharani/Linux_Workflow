@@ -11,7 +11,6 @@ require("nvim-treesitter.configs").setup({
 		"yaml",
 		"html",
 		"css",
-		"markdown",
 		"graphql",
 		"bash",
 		"dockerfile",
