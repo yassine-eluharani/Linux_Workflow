@@ -107,12 +107,6 @@ require("lazy").setup({
 			require("treesj").setup()
 		end,
 	},
-	{
-		"f-person/git-blame.nvim",
-		require("gitblame").setup({
-			enabled = false,
-		}),
-	},
 	"xiyaowong/transparent.nvim",
 	{
 		"folke/flash.nvim",
