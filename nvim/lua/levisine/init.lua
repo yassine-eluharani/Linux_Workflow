@@ -17,7 +17,6 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = ","
 
 require("lazy").setup({
-
 	"nvim-lua/plenary.nvim",
 	{
 		"nvim-telescope/telescope.nvim",
@@ -120,46 +119,6 @@ require("lazy").setup({
 		end,
 	},
 	"xiyaowong/transparent.nvim",
-	{
-		"folke/flash.nvim",
-		event = "VeryLazy",
-		---@type Flash.Config
-		opts = {},
-        -- stylua: ignore
-        keys = {
-            { "s",     mode = { "n", "x", "o" }, function() require("flash").jump() end,              desc = "Flash" },
-            { "S",     mode = { "n", "x", "o" }, function() require("flash").treesitter() end,        desc = "Flash Treesitter" },
-            { "r",     mode = "o",               function() require("flash").remote() end,            desc = "Remote Flash" },
-            { "R",     mode = { "o", "x" },      function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
-            { "<c-s>", mode = { "c" },           function() require("flash").toggle() end,            desc = "Toggle Flash Search" },
-        },
-	},
-	{
-		"rcarriga/nvim-notify",
-		keys = {
-			{
-				"<leader>un",
-				function()
-					require("notify").dismiss({ silent = true, pending = true })
-				end,
-				desc = "Dismiss all Notifications",
-			},
-		},
-		opts = {
-			background_colour = "#000000",
-			timeout = 3000,
-			max_height = function()
-				return math.floor(vim.o.lines * 0.75)
-			end,
-			max_width = function()
-				return math.floor(vim.o.columns * 0.75)
-			end,
-			on_open = function(win)
-				vim.api.nvim_win_set_config(win, { zindex = 100 })
-			end,
-		},
-	},
-	"folke/noice.nvim",
 	"lukas-reineke/indent-blankline.nvim",
 	{
 		lazy = true,
@@ -171,32 +130,11 @@ require("lazy").setup({
 		},
 	},
 	{
-		"folke/which-key.nvim",
-		event = "VeryLazy",
-		init = function()
-			vim.o.timeout = true
-			vim.o.timeoutlen = 300
+		"iamcco/markdown-preview.nvim",
+		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+		ft = { "markdown" },
+		build = function()
+			vim.fn["mkdp#util#install"]()
 		end,
-		opts = {
-			plugins = { spelling = true },
-			defaults = {
-				mode = { "n", "v" },
-				["g"] = { name = "+goto" },
-				["gs"] = { name = "+surround" },
-				[")"] = { name = "+next" },
-				["("] = { name = "+prev" },
-				["<leader><tab>"] = { name = "+tabs" },
-				["<leader>b"] = { name = "+buffer" },
-				["<leader>c"] = { name = "+code" },
-				["<leader>f"] = { name = "+file/find" },
-				["<leader>g"] = { name = "+git" },
-				["<leader>gh"] = { name = "+hunks" },
-				["<leader>q"] = { name = "+quit/session" },
-				["<leader>s"] = { name = "+search" },
-				["<leader>u"] = { name = "+ui" },
-				["<leader>w"] = { name = "+windows" },
-				["<leader>x"] = { name = "+diagnostics/quickfix" },
-			},
-		},
 	},
 })

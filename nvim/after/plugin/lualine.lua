@@ -5,6 +5,7 @@ end
 
 local lualine_nightfly = require("lualine.themes.nightfly")
 local nord = require("lualine.themes.palenight")
+local iceberg_dark = require("lualine.themes.iceberg_dark")
 
 --[[ local colors = { ]]
 --[[ 	bg_dark = "#1f2335", ]]
@@ -16,7 +17,7 @@ local nord = require("lualine.themes.palenight")
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = nord,
+		theme = iceberg_dark,
 	},
 	sections = {
 		lualine_a = { "mode" },
